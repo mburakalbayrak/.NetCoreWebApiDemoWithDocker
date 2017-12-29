@@ -1,0 +1,9 @@
+D:\Burak Yeni\HurriyetDemo\HurriyetDemo.Core\bin\Debug\netcoreapp2.0\HurriyetDemo.Core.deps.json
+D:\Burak Yeni\HurriyetDemo\HurriyetDemo.Core\bin\Debug\netcoreapp2.0\HurriyetDemo.Core.dll
+D:\Burak Yeni\HurriyetDemo\HurriyetDemo.Core\obj\Debug\netcoreapp2.0\HurriyetDemo.Core.csprojResolveAssemblyReference.cache
+D:\Burak Yeni\HurriyetDemo\HurriyetDemo.Core\obj\Debug\netcoreapp2.0\HurriyetDemo.Core.csproj.CoreCompileInputs.cache
+D:\Burak Yeni\HurriyetDemo\HurriyetDemo.Core\obj\Debug\netcoreapp2.0\HurriyetDemo.Core.AssemblyInfoInputs.cache
+D:\Burak Yeni\HurriyetDemo\HurriyetDemo.Core\obj\Debug\netcoreapp2.0\HurriyetDemo.Core.AssemblyInfo.cs
+D:\Burak Yeni\HurriyetDemo\HurriyetDemo.Core\bin\Debug\netcoreapp2.0\HurriyetDemo.Core.pdb
+D:\Burak Yeni\HurriyetDemo\HurriyetDemo.Core\obj\Debug\netcoreapp2.0\HurriyetDemo.Core.dll
+D:\Burak Yeni\HurriyetDemo\HurriyetDemo.Core\obj\Debug\netcoreapp2.0\HurriyetDemo.Core.pdb

@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hurriyet.HurriyetDb.DataAccess\Hurriyet.HurriyetDb.DataAccess.csproj" />
+    <ProjectReference Include="..\HurriyetDemo.Core\HurriyetDemo.Core.csproj" />
+    <ProjectReference Include="..\HurriyetDemo.HurriyetDb.Entities\HurriyetDemo.HurriyetDb.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

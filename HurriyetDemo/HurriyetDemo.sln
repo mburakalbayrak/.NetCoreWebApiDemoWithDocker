@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HurriyetDemo.Core", "HurriyetDemo.Core\HurriyetDemo.Core.csproj", "{EF1001DE-C0D3-4A7E-975C-4A4C17685B04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HurriyetDemo.HurriyetDb.Entities", "HurriyetDemo.HurriyetDb.Entities\HurriyetDemo.HurriyetDb.Entities.csproj", "{EC345976-A683-4975-86C2-7E409659A484}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hurriyet.HurriyetDb.DataAccess", "Hurriyet.HurriyetDb.DataAccess\Hurriyet.HurriyetDb.DataAccess.csproj", "{6580B642-262F-44FA-90F2-BF0EA9BDA9F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hurriyet.HurriyetDb.Business", "Hurriyet.HurriyetDb.Business\Hurriyet.HurriyetDb.Business.csproj", "{9867FA70-1C66-40C4-8140-3AC211644357}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF1001DE-C0D3-4A7E-975C-4A4C17685B04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF1001DE-C0D3-4A7E-975C-4A4C17685B04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF1001DE-C0D3-4A7E-975C-4A4C17685B04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF1001DE-C0D3-4A7E-975C-4A4C17685B04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC345976-A683-4975-86C2-7E409659A484}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC345976-A683-4975-86C2-7E409659A484}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC345976-A683-4975-86C2-7E409659A484}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC345976-A683-4975-86C2-7E409659A484}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6580B642-262F-44FA-90F2-BF0EA9BDA9F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6580B642-262F-44FA-90F2-BF0EA9BDA9F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6580B642-262F-44FA-90F2-BF0EA9BDA9F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6580B642-262F-44FA-90F2-BF0EA9BDA9F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9867FA70-1C66-40C4-8140-3AC211644357}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9867FA70-1C66-40C4-8140-3AC211644357}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9867FA70-1C66-40C4-8140-3AC211644357}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9867FA70-1C66-40C4-8140-3AC211644357}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50B0AA75-C36F-4C53-B2DE-5C9C35D727ED}
+	EndGlobalSection
+EndGlobal
