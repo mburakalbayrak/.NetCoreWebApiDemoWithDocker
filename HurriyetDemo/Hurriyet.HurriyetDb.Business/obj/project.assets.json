@@ -3092,11 +3092,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\Burak Yeni\\HurriyetDemo\\Hurriyet.HurriyetDb.Business\\Hurriyet.HurriyetDb.Business.csproj",
+      "projectUniqueName": "D:\\Burak GitHub\\.NetCoreWebApiDemoWithDocker\\HurriyetDemo\\Hurriyet.HurriyetDb.Business\\Hurriyet.HurriyetDb.Business.csproj",
       "projectName": "Hurriyet.HurriyetDb.Business",
-      "projectPath": "D:\\Burak Yeni\\HurriyetDemo\\Hurriyet.HurriyetDb.Business\\Hurriyet.HurriyetDb.Business.csproj",
+      "projectPath": "D:\\Burak GitHub\\.NetCoreWebApiDemoWithDocker\\HurriyetDemo\\Hurriyet.HurriyetDb.Business\\Hurriyet.HurriyetDb.Business.csproj",
       "packagesPath": "C:\\Users\\balbayrak\\.nuget\\packages\\",
-      "outputPath": "D:\\Burak Yeni\\HurriyetDemo\\Hurriyet.HurriyetDb.Business\\obj\\",
+      "outputPath": "D:\\Burak GitHub\\.NetCoreWebApiDemoWithDocker\\HurriyetDemo\\Hurriyet.HurriyetDb.Business\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3115,14 +3115,14 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "D:\\Burak Yeni\\HurriyetDemo\\HurriyetDemo.Core\\HurriyetDemo.Core.csproj": {
-              "projectPath": "D:\\Burak Yeni\\HurriyetDemo\\HurriyetDemo.Core\\HurriyetDemo.Core.csproj"
+            "D:\\Burak GitHub\\.NetCoreWebApiDemoWithDocker\\HurriyetDemo\\HurriyetDemo.Core\\HurriyetDemo.Core.csproj": {
+              "projectPath": "D:\\Burak GitHub\\.NetCoreWebApiDemoWithDocker\\HurriyetDemo\\HurriyetDemo.Core\\HurriyetDemo.Core.csproj"
             },
-            "D:\\Burak Yeni\\HurriyetDemo\\HurriyetDemo.HurriyetDb.Entities\\HurriyetDemo.HurriyetDb.Entities.csproj": {
-              "projectPath": "D:\\Burak Yeni\\HurriyetDemo\\HurriyetDemo.HurriyetDb.Entities\\HurriyetDemo.HurriyetDb.Entities.csproj"
+            "D:\\Burak GitHub\\.NetCoreWebApiDemoWithDocker\\HurriyetDemo\\HurriyetDemo.HurriyetDb.Entities\\HurriyetDemo.HurriyetDb.Entities.csproj": {
+              "projectPath": "D:\\Burak GitHub\\.NetCoreWebApiDemoWithDocker\\HurriyetDemo\\HurriyetDemo.HurriyetDb.Entities\\HurriyetDemo.HurriyetDb.Entities.csproj"
             },
-            "D:\\Burak Yeni\\HurriyetDemo\\Hurriyet.HurriyetDb.DataAccess\\Hurriyet.HurriyetDb.DataAccess.csproj": {
-              "projectPath": "D:\\Burak Yeni\\HurriyetDemo\\Hurriyet.HurriyetDb.DataAccess\\Hurriyet.HurriyetDb.DataAccess.csproj"
+            "D:\\Burak GitHub\\.NetCoreWebApiDemoWithDocker\\HurriyetDemo\\Hurriyet.HurriyetDb.DataAccess\\Hurriyet.HurriyetDb.DataAccess.csproj": {
+              "projectPath": "D:\\Burak GitHub\\.NetCoreWebApiDemoWithDocker\\HurriyetDemo\\Hurriyet.HurriyetDb.DataAccess\\Hurriyet.HurriyetDb.DataAccess.csproj"
             }
           }
         }

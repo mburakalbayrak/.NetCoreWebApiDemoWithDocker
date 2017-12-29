@@ -9,3 +9,14 @@ D:\Burak Yeni\HurriyetDemo\HurriyetDemo.HurriyetDb.Entities\obj\Debug\netcoreapp
 D:\Burak Yeni\HurriyetDemo\HurriyetDemo.HurriyetDb.Entities\obj\Debug\netcoreapp2.0\HurriyetDemo.HurriyetDb.Entities.AssemblyInfo.cs
 D:\Burak Yeni\HurriyetDemo\HurriyetDemo.HurriyetDb.Entities\obj\Debug\netcoreapp2.0\HurriyetDemo.HurriyetDb.Entities.dll
 D:\Burak Yeni\HurriyetDemo\HurriyetDemo.HurriyetDb.Entities\obj\Debug\netcoreapp2.0\HurriyetDemo.HurriyetDb.Entities.pdb
+D:\Burak GitHub\.NetCoreWebApiDemoWithDocker\HurriyetDemo\HurriyetDemo.HurriyetDb.Entities\bin\Debug\netcoreapp2.0\HurriyetDemo.HurriyetDb.Entities.deps.json
+D:\Burak GitHub\.NetCoreWebApiDemoWithDocker\HurriyetDemo\HurriyetDemo.HurriyetDb.Entities\bin\Debug\netcoreapp2.0\HurriyetDemo.HurriyetDb.Entities.dll
+D:\Burak GitHub\.NetCoreWebApiDemoWithDocker\HurriyetDemo\HurriyetDemo.HurriyetDb.Entities\bin\Debug\netcoreapp2.0\HurriyetDemo.HurriyetDb.Entities.pdb
+D:\Burak GitHub\.NetCoreWebApiDemoWithDocker\HurriyetDemo\HurriyetDemo.HurriyetDb.Entities\bin\Debug\netcoreapp2.0\HurriyetDemo.Core.dll
+D:\Burak GitHub\.NetCoreWebApiDemoWithDocker\HurriyetDemo\HurriyetDemo.HurriyetDb.Entities\bin\Debug\netcoreapp2.0\HurriyetDemo.Core.pdb
+D:\Burak GitHub\.NetCoreWebApiDemoWithDocker\HurriyetDemo\HurriyetDemo.HurriyetDb.Entities\obj\Debug\netcoreapp2.0\HurriyetDemo.HurriyetDb.Entities.csprojResolveAssemblyReference.cache
+D:\Burak GitHub\.NetCoreWebApiDemoWithDocker\HurriyetDemo\HurriyetDemo.HurriyetDb.Entities\obj\Debug\netcoreapp2.0\HurriyetDemo.HurriyetDb.Entities.csproj.CoreCompileInputs.cache
+D:\Burak GitHub\.NetCoreWebApiDemoWithDocker\HurriyetDemo\HurriyetDemo.HurriyetDb.Entities\obj\Debug\netcoreapp2.0\HurriyetDemo.HurriyetDb.Entities.AssemblyInfoInputs.cache
+D:\Burak GitHub\.NetCoreWebApiDemoWithDocker\HurriyetDemo\HurriyetDemo.HurriyetDb.Entities\obj\Debug\netcoreapp2.0\HurriyetDemo.HurriyetDb.Entities.AssemblyInfo.cs
+D:\Burak GitHub\.NetCoreWebApiDemoWithDocker\HurriyetDemo\HurriyetDemo.HurriyetDb.Entities\obj\Debug\netcoreapp2.0\HurriyetDemo.HurriyetDb.Entities.dll
+D:\Burak GitHub\.NetCoreWebApiDemoWithDocker\HurriyetDemo\HurriyetDemo.HurriyetDb.Entities\obj\Debug\netcoreapp2.0\HurriyetDemo.HurriyetDb.Entities.pdb

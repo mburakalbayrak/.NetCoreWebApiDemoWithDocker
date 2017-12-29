@@ -3072,11 +3072,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\Burak Yeni\\HurriyetDemo\\Hurriyet.HurriyetDb.DataAccess\\Hurriyet.HurriyetDb.DataAccess.csproj",
+      "projectUniqueName": "D:\\Burak GitHub\\.NetCoreWebApiDemoWithDocker\\HurriyetDemo\\Hurriyet.HurriyetDb.DataAccess\\Hurriyet.HurriyetDb.DataAccess.csproj",
       "projectName": "Hurriyet.HurriyetDb.DataAccess",
-      "projectPath": "D:\\Burak Yeni\\HurriyetDemo\\Hurriyet.HurriyetDb.DataAccess\\Hurriyet.HurriyetDb.DataAccess.csproj",
+      "projectPath": "D:\\Burak GitHub\\.NetCoreWebApiDemoWithDocker\\HurriyetDemo\\Hurriyet.HurriyetDb.DataAccess\\Hurriyet.HurriyetDb.DataAccess.csproj",
       "packagesPath": "C:\\Users\\balbayrak\\.nuget\\packages\\",
-      "outputPath": "D:\\Burak Yeni\\HurriyetDemo\\Hurriyet.HurriyetDb.DataAccess\\obj\\",
+      "outputPath": "D:\\Burak GitHub\\.NetCoreWebApiDemoWithDocker\\HurriyetDemo\\Hurriyet.HurriyetDb.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3095,11 +3095,11 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "D:\\Burak Yeni\\HurriyetDemo\\HurriyetDemo.Core\\HurriyetDemo.Core.csproj": {
-              "projectPath": "D:\\Burak Yeni\\HurriyetDemo\\HurriyetDemo.Core\\HurriyetDemo.Core.csproj"
+            "D:\\Burak GitHub\\.NetCoreWebApiDemoWithDocker\\HurriyetDemo\\HurriyetDemo.Core\\HurriyetDemo.Core.csproj": {
+              "projectPath": "D:\\Burak GitHub\\.NetCoreWebApiDemoWithDocker\\HurriyetDemo\\HurriyetDemo.Core\\HurriyetDemo.Core.csproj"
             },
-            "D:\\Burak Yeni\\HurriyetDemo\\HurriyetDemo.HurriyetDb.Entities\\HurriyetDemo.HurriyetDb.Entities.csproj": {
-              "projectPath": "D:\\Burak Yeni\\HurriyetDemo\\HurriyetDemo.HurriyetDb.Entities\\HurriyetDemo.HurriyetDb.Entities.csproj"
+            "D:\\Burak GitHub\\.NetCoreWebApiDemoWithDocker\\HurriyetDemo\\HurriyetDemo.HurriyetDb.Entities\\HurriyetDemo.HurriyetDb.Entities.csproj": {
+              "projectPath": "D:\\Burak GitHub\\.NetCoreWebApiDemoWithDocker\\HurriyetDemo\\HurriyetDemo.HurriyetDb.Entities\\HurriyetDemo.HurriyetDb.Entities.csproj"
             }
           }
         }

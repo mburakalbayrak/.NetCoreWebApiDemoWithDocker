@@ -2785,11 +2785,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\Burak Yeni\\HurriyetDemo\\HurriyetDemo.HurriyetDb.Entities\\HurriyetDemo.HurriyetDb.Entities.csproj",
+      "projectUniqueName": "D:\\Burak GitHub\\.NetCoreWebApiDemoWithDocker\\HurriyetDemo\\HurriyetDemo.HurriyetDb.Entities\\HurriyetDemo.HurriyetDb.Entities.csproj",
       "projectName": "HurriyetDemo.HurriyetDb.Entities",
-      "projectPath": "D:\\Burak Yeni\\HurriyetDemo\\HurriyetDemo.HurriyetDb.Entities\\HurriyetDemo.HurriyetDb.Entities.csproj",
+      "projectPath": "D:\\Burak GitHub\\.NetCoreWebApiDemoWithDocker\\HurriyetDemo\\HurriyetDemo.HurriyetDb.Entities\\HurriyetDemo.HurriyetDb.Entities.csproj",
       "packagesPath": "C:\\Users\\balbayrak\\.nuget\\packages\\",
-      "outputPath": "D:\\Burak Yeni\\HurriyetDemo\\HurriyetDemo.HurriyetDb.Entities\\obj\\",
+      "outputPath": "D:\\Burak GitHub\\.NetCoreWebApiDemoWithDocker\\HurriyetDemo\\HurriyetDemo.HurriyetDb.Entities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -2808,8 +2808,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "D:\\Burak Yeni\\HurriyetDemo\\HurriyetDemo.Core\\HurriyetDemo.Core.csproj": {
-              "projectPath": "D:\\Burak Yeni\\HurriyetDemo\\HurriyetDemo.Core\\HurriyetDemo.Core.csproj"
+            "D:\\Burak GitHub\\.NetCoreWebApiDemoWithDocker\\HurriyetDemo\\HurriyetDemo.Core\\HurriyetDemo.Core.csproj": {
+              "projectPath": "D:\\Burak GitHub\\.NetCoreWebApiDemoWithDocker\\HurriyetDemo\\HurriyetDemo.Core\\HurriyetDemo.Core.csproj"
             }
           }
         }

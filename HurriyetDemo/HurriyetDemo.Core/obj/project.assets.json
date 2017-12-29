@@ -2767,11 +2767,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\Burak Yeni\\HurriyetDemo\\HurriyetDemo.Core\\HurriyetDemo.Core.csproj",
+      "projectUniqueName": "D:\\Burak GitHub\\.NetCoreWebApiDemoWithDocker\\HurriyetDemo\\HurriyetDemo.Core\\HurriyetDemo.Core.csproj",
       "projectName": "HurriyetDemo.Core",
-      "projectPath": "D:\\Burak Yeni\\HurriyetDemo\\HurriyetDemo.Core\\HurriyetDemo.Core.csproj",
+      "projectPath": "D:\\Burak GitHub\\.NetCoreWebApiDemoWithDocker\\HurriyetDemo\\HurriyetDemo.Core\\HurriyetDemo.Core.csproj",
       "packagesPath": "C:\\Users\\balbayrak\\.nuget\\packages\\",
-      "outputPath": "D:\\Burak Yeni\\HurriyetDemo\\HurriyetDemo.Core\\obj\\",
+      "outputPath": "D:\\Burak GitHub\\.NetCoreWebApiDemoWithDocker\\HurriyetDemo\\HurriyetDemo.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

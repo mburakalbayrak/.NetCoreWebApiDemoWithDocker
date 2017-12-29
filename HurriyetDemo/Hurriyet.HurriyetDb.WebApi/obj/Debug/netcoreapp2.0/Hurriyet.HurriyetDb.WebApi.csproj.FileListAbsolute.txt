@@ -1,0 +1,11 @@
+D:\Burak GitHub\.NetCoreWebApiDemoWithDocker\HurriyetDemo\Hurriyet.HurriyetDb.WebApi\bin\Debug\netcoreapp2.0\Hurriyet.HurriyetDb.WebApi.deps.json
+D:\Burak GitHub\.NetCoreWebApiDemoWithDocker\HurriyetDemo\Hurriyet.HurriyetDb.WebApi\bin\Debug\netcoreapp2.0\Hurriyet.HurriyetDb.WebApi.runtimeconfig.json
+D:\Burak GitHub\.NetCoreWebApiDemoWithDocker\HurriyetDemo\Hurriyet.HurriyetDb.WebApi\bin\Debug\netcoreapp2.0\Hurriyet.HurriyetDb.WebApi.runtimeconfig.dev.json
+D:\Burak GitHub\.NetCoreWebApiDemoWithDocker\HurriyetDemo\Hurriyet.HurriyetDb.WebApi\bin\Debug\netcoreapp2.0\Hurriyet.HurriyetDb.WebApi.dll
+D:\Burak GitHub\.NetCoreWebApiDemoWithDocker\HurriyetDemo\Hurriyet.HurriyetDb.WebApi\bin\Debug\netcoreapp2.0\Hurriyet.HurriyetDb.WebApi.pdb
+D:\Burak GitHub\.NetCoreWebApiDemoWithDocker\HurriyetDemo\Hurriyet.HurriyetDb.WebApi\obj\Debug\netcoreapp2.0\Hurriyet.HurriyetDb.WebApi.csprojResolveAssemblyReference.cache
+D:\Burak GitHub\.NetCoreWebApiDemoWithDocker\HurriyetDemo\Hurriyet.HurriyetDb.WebApi\obj\Debug\netcoreapp2.0\Hurriyet.HurriyetDb.WebApi.csproj.CoreCompileInputs.cache
+D:\Burak GitHub\.NetCoreWebApiDemoWithDocker\HurriyetDemo\Hurriyet.HurriyetDb.WebApi\obj\Debug\netcoreapp2.0\Hurriyet.HurriyetDb.WebApi.AssemblyInfoInputs.cache
+D:\Burak GitHub\.NetCoreWebApiDemoWithDocker\HurriyetDemo\Hurriyet.HurriyetDb.WebApi\obj\Debug\netcoreapp2.0\Hurriyet.HurriyetDb.WebApi.AssemblyInfo.cs
+D:\Burak GitHub\.NetCoreWebApiDemoWithDocker\HurriyetDemo\Hurriyet.HurriyetDb.WebApi\obj\Debug\netcoreapp2.0\Hurriyet.HurriyetDb.WebApi.dll
+D:\Burak GitHub\.NetCoreWebApiDemoWithDocker\HurriyetDemo\Hurriyet.HurriyetDb.WebApi\obj\Debug\netcoreapp2.0\Hurriyet.HurriyetDb.WebApi.pdb
