@@ -85,6 +85,8 @@ namespace Hurriyet.HurriyetDb.WebApi
             {
                 await context.Response.WriteAsync("Hello World!");
             });
+
+            app.UseMvc();
         }
     }
 }
