@@ -1,4 +1,5 @@
 ﻿using Hurriyet.HurriyetDb.Business.Abstract;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Hurriyet.HurriyetDb.WebApi.Controllers
 {
@@ -8,6 +9,7 @@ namespace Hurriyet.HurriyetDb.WebApi.Controllers
 
     namespace Hurriyet.HurriyetDb.WebApi.Controllers
     {
+        [Authorize]
         [Route("api/[controller]")]
         public class ProductsController : Controller
         {
