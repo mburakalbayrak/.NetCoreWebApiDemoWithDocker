@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Hurriyet.HurriyetDb.Business\Hurriyet.HurriyetDb.Business.csproj" />
+    <ProjectReference Include="..\Hurriyet.HurriyetDb.DataAccess\Hurriyet.HurriyetDb.DataAccess.csproj" />
     <ProjectReference Include="..\HurriyetDemo.Core\HurriyetDemo.Core.csproj" />
     <ProjectReference Include="..\HurriyetDemo.HurriyetDb.Entities\HurriyetDemo.HurriyetDb.Entities.csproj" />
   </ItemGroup>
