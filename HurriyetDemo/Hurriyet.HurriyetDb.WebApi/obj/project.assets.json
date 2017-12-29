@@ -2735,6 +2735,34 @@
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
         }
       },
+      "Npgsql/3.2.5": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Npgsql.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Npgsql.dll": {}
+        }
+      },
+      "Npgsql.EntityFrameworkCore.PostgreSQL/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "2.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "2.0.0",
+          "Microsoft.Extensions.DependencyInjection": "2.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0",
+          "Npgsql": "3.2.5"
+        },
+        "compile": {
+          "lib/netstandard2.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {}
+        }
+      },
       "Remotion.Linq/2.1.1": {
         "type": "package",
         "dependencies": {
@@ -4745,6 +4773,64 @@
         },
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
+        }
+      },
+      "Hurriyet.HurriyetDb.Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Hurriyet.HurriyetDb.DataAccess": "1.0.0",
+          "HurriyetDemo.Core": "1.0.0",
+          "HurriyetDemo.HurriyetDb.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Hurriyet.HurriyetDb.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hurriyet.HurriyetDb.Business.dll": {}
+        }
+      },
+      "Hurriyet.HurriyetDb.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "HurriyetDemo.Core": "1.0.0",
+          "HurriyetDemo.HurriyetDb.Entities": "1.0.0",
+          "Microsoft.EntityFrameworkCore.Design": "2.0.0",
+          "Microsoft.EntityFrameworkCore.Tools": "2.0.0",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "2.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Hurriyet.HurriyetDb.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hurriyet.HurriyetDb.DataAccess.dll": {}
+        }
+      },
+      "HurriyetDemo.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "2.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HurriyetDemo.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HurriyetDemo.Core.dll": {}
+        }
+      },
+      "HurriyetDemo.HurriyetDb.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "HurriyetDemo.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HurriyetDemo.HurriyetDb.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HurriyetDemo.HurriyetDb.Entities.dll": {}
         }
       }
     }
@@ -7556,6 +7642,33 @@
         "lib/netstandard1.3/Newtonsoft.Json.Bson.xml",
         "newtonsoft.json.bson.1.0.1.nupkg.sha512",
         "newtonsoft.json.bson.nuspec"
+      ]
+    },
+    "Npgsql/3.2.5": {
+      "sha512": "89z5pHuLuwjkHz/cQLuM/YxlepR/0NKJP+Cvu8z1cAMv7AdKZnN5leQqV6HxIQDR245Xal1w5OH7kDb9hDRupg==",
+      "type": "package",
+      "path": "npgsql/3.2.5",
+      "files": [
+        "lib/net45/Npgsql.dll",
+        "lib/net45/Npgsql.xml",
+        "lib/net451/Npgsql.dll",
+        "lib/net451/Npgsql.xml",
+        "lib/netstandard1.3/Npgsql.dll",
+        "lib/netstandard1.3/Npgsql.xml",
+        "lib/netstandard2.0/Npgsql.dll",
+        "lib/netstandard2.0/Npgsql.xml",
+        "npgsql.3.2.5.nupkg.sha512",
+        "npgsql.nuspec"
+      ]
+    },
+    "Npgsql.EntityFrameworkCore.PostgreSQL/2.0.0": {
+      "sha512": "saKCNK8A5OW3sUhL/tvYqNyKUK7AbIQlZUVmjn4Fw9wstyopECeF/9Er1fexRLpWev0/H9fUzFclTrXm+omsag==",
+      "type": "package",
+      "path": "npgsql.entityframeworkcore.postgresql/2.0.0",
+      "files": [
+        "lib/netstandard2.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll",
+        "npgsql.entityframeworkcore.postgresql.2.0.0.nupkg.sha512",
+        "npgsql.entityframeworkcore.postgresql.nuspec"
       ]
     },
     "Remotion.Linq/2.1.1": {
@@ -12525,11 +12638,35 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "Hurriyet.HurriyetDb.Business/1.0.0": {
+      "type": "project",
+      "path": "../Hurriyet.HurriyetDb.Business/Hurriyet.HurriyetDb.Business.csproj",
+      "msbuildProject": "../Hurriyet.HurriyetDb.Business/Hurriyet.HurriyetDb.Business.csproj"
+    },
+    "Hurriyet.HurriyetDb.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../Hurriyet.HurriyetDb.DataAccess/Hurriyet.HurriyetDb.DataAccess.csproj",
+      "msbuildProject": "../Hurriyet.HurriyetDb.DataAccess/Hurriyet.HurriyetDb.DataAccess.csproj"
+    },
+    "HurriyetDemo.Core/1.0.0": {
+      "type": "project",
+      "path": "../HurriyetDemo.Core/HurriyetDemo.Core.csproj",
+      "msbuildProject": "../HurriyetDemo.Core/HurriyetDemo.Core.csproj"
+    },
+    "HurriyetDemo.HurriyetDb.Entities/1.0.0": {
+      "type": "project",
+      "path": "../HurriyetDemo.HurriyetDb.Entities/HurriyetDemo.HurriyetDb.Entities.csproj",
+      "msbuildProject": "../HurriyetDemo.HurriyetDb.Entities/HurriyetDemo.HurriyetDb.Entities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "Hurriyet.HurriyetDb.Business >= 1.0.0",
+      "HurriyetDemo.Core >= 1.0.0",
+      "HurriyetDemo.HurriyetDb.Entities >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.3",
+      "Microsoft.AspNetCore.Authentication.JwtBearer >= 2.0.1",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
   },
@@ -12565,7 +12702,17 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Burak GitHub\\.NetCoreWebApiDemoWithDocker\\HurriyetDemo\\HurriyetDemo.Core\\HurriyetDemo.Core.csproj": {
+              "projectPath": "D:\\Burak GitHub\\.NetCoreWebApiDemoWithDocker\\HurriyetDemo\\HurriyetDemo.Core\\HurriyetDemo.Core.csproj"
+            },
+            "D:\\Burak GitHub\\.NetCoreWebApiDemoWithDocker\\HurriyetDemo\\HurriyetDemo.HurriyetDb.Entities\\HurriyetDemo.HurriyetDb.Entities.csproj": {
+              "projectPath": "D:\\Burak GitHub\\.NetCoreWebApiDemoWithDocker\\HurriyetDemo\\HurriyetDemo.HurriyetDb.Entities\\HurriyetDemo.HurriyetDb.Entities.csproj"
+            },
+            "D:\\Burak GitHub\\.NetCoreWebApiDemoWithDocker\\HurriyetDemo\\Hurriyet.HurriyetDb.Business\\Hurriyet.HurriyetDb.Business.csproj": {
+              "projectPath": "D:\\Burak GitHub\\.NetCoreWebApiDemoWithDocker\\HurriyetDemo\\Hurriyet.HurriyetDb.Business\\Hurriyet.HurriyetDb.Business.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -12580,6 +12727,10 @@
           "Microsoft.AspNetCore.All": {
             "target": "Package",
             "version": "[2.0.3, )"
+          },
+          "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "target": "Package",
+            "version": "[2.0.1, )"
           },
           "Microsoft.NETCore.App": {
             "target": "Package",

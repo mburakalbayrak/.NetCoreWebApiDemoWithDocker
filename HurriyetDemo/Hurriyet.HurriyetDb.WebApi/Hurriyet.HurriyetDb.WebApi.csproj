@@ -10,6 +10,13 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hurriyet.HurriyetDb.Business\Hurriyet.HurriyetDb.Business.csproj" />
+    <ProjectReference Include="..\HurriyetDemo.Core\HurriyetDemo.Core.csproj" />
+    <ProjectReference Include="..\HurriyetDemo.HurriyetDb.Entities\HurriyetDemo.HurriyetDb.Entities.csproj" />
   </ItemGroup>
 
 </Project>
