@@ -12663,6 +12663,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Hurriyet.HurriyetDb.Business >= 1.0.0",
+      "Hurriyet.HurriyetDb.DataAccess >= 1.0.0",
       "HurriyetDemo.Core >= 1.0.0",
       "HurriyetDemo.HurriyetDb.Entities >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.3",
@@ -12711,6 +12712,9 @@
             },
             "D:\\Burak GitHub\\.NetCoreWebApiDemoWithDocker\\HurriyetDemo\\Hurriyet.HurriyetDb.Business\\Hurriyet.HurriyetDb.Business.csproj": {
               "projectPath": "D:\\Burak GitHub\\.NetCoreWebApiDemoWithDocker\\HurriyetDemo\\Hurriyet.HurriyetDb.Business\\Hurriyet.HurriyetDb.Business.csproj"
+            },
+            "D:\\Burak GitHub\\.NetCoreWebApiDemoWithDocker\\HurriyetDemo\\Hurriyet.HurriyetDb.DataAccess\\Hurriyet.HurriyetDb.DataAccess.csproj": {
+              "projectPath": "D:\\Burak GitHub\\.NetCoreWebApiDemoWithDocker\\HurriyetDemo\\Hurriyet.HurriyetDb.DataAccess\\Hurriyet.HurriyetDb.DataAccess.csproj"
             }
           }
         }

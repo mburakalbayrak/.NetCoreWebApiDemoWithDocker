@@ -24,6 +24,7 @@
       "Hurriyet.HurriyetDb.WebApi/1.0.0": {
         "dependencies": {
           "Hurriyet.HurriyetDb.Business": "1.0.0",
+          "Hurriyet.HurriyetDb.DataAccess": "1.0.0",
           "HurriyetDemo.Core": "1.0.0",
           "HurriyetDemo.HurriyetDb.Entities": "1.0.0",
           "Microsoft.AspNetCore.All": "2.0.3",
