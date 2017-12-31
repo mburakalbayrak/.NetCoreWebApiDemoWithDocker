@@ -1,0 +1,1 @@
+D:\Burak GitHub\.NetCoreWebApiDemoWithDocker\HurriyetDemo\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache

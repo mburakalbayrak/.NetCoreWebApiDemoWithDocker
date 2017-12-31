@@ -1,0 +1,32 @@
+networks:
+  default:
+    external:
+      name: nat
+services:
+  hurriyet.hurriyetdb.webapi:
+    build:
+      context: D:\Burak GitHub\.NetCoreWebApiDemoWithDocker\HurriyetDemo
+      dockerfile: Hurriyet.HurriyetDb.WebApi\Dockerfile
+    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus
+      /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: c:\.nuget\fallbackpackages
+      NUGET_PACKAGES: C:\.nuget\packages
+    image: hurriyet.hurriyetdb.webapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath c:\.nuget\packages
+        --additionalProbingPath c:\.nuget\fallbackpackages  bin\Debug\netcoreapp2.0\Hurriyet.HurriyetDb.WebApi.dll'
+      com.microsoft.visualstudio.debuggee.killprogram: C:\remote_debugger\x64\utils\KillProcess.exe
+        dotnet.exe
+      com.microsoft.visualstudio.debuggee.program: '"C:\Program Files\dotnet\dotnet.exe"'
+      com.microsoft.visualstudio.debuggee.workingdirectory: C:\app
+    ports:
+    - 80/tcp
+    volumes:
+    - D:\Burak GitHub\.NetCoreWebApiDemoWithDocker\HurriyetDemo\Hurriyet.HurriyetDb.WebApi:C:\app:rw
+    - C:\Users\balbayrak\onecoremsvsmon\15.0.27130.2010:C:\remote_debugger:ro
+    - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:c:\.nuget\fallbackpackages:ro
+    - C:\Users\balbayrak\.nuget\packages:c:\.nuget\packages:ro
+version: '3.0'

@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  hurriyet.hurriyetdb.webapi:
+    image: hurriyet.hurriyetdb.webapi
+    build:
+      context: .
+      dockerfile: Hurriyet.HurriyetDb.WebApi\Dockerfile

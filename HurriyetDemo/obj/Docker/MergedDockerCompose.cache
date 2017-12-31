@@ -1,0 +1,15 @@
+networks:
+  default:
+    external:
+      name: nat
+services:
+  hurriyet.hurriyetdb.webapi:
+    build:
+      context: D:\Burak GitHub\.NetCoreWebApiDemoWithDocker\HurriyetDemo
+      dockerfile: Hurriyet.HurriyetDb.WebApi\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: hurriyet.hurriyetdb.webapi
+    ports:
+    - 80/tcp
+version: '3.0'
