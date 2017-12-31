@@ -10,7 +10,7 @@ using NLog;
 
 namespace Hurriyet.HurriyetDb.WebApi.Controllers
 {
-    //[Authorize]
+    [Authorize]
     [Route("api/[controller]")]
     public class UsersController : Controller
     {
