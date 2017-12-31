@@ -25,5 +25,16 @@ namespace Hurriyet.HurriyetDb.Business.Concrete
         {
             return _userDal.GetList();
         }
+
+        public void Add(User product)
+        {
+            _userDal.Add(product);
+        }
+
+        public void Update(User product)
+        {
+            _userDal.Update(product);
+        }
+        
     }
 }

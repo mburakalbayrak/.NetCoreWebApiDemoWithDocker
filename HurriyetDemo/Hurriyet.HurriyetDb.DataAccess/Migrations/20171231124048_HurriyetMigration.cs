@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Hurriyet.HurriyetDb.DataAccess.Migrations
 {
-    public partial class HurriyetContext : Migration
+    public partial class HurriyetMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

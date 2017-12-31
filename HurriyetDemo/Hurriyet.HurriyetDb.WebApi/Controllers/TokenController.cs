@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Hurriyet.HurriyetDb.Business.Abstract;
 
 namespace Hurriyet.HurriyetDb.WebApi.Controllers
 {
@@ -23,12 +24,23 @@ namespace Hurriyet.HurriyetDb.WebApi.Controllers
         [Route("api/[controller]")]
         public class TokenController : Controller
         {
+            private IUSerService _userService;
+
+            public TokenController(IUSerService userService)
+            {
+                _userService = userService;
+            }
+
             [HttpPost("new")]
             public IActionResult GetToken([FromBody]User user)
             {
                 //if (IsValidUserAndPassword(user.Username, user.Password))
 
-                if (ModelState.IsValid)
+                //if (ModelState.IsValid)
+                //{
+                //    return new ObjectResult(GenerateToken(user));
+                //}
+                if (IsValidUserAndPassword(user))
                 {
                     return new ObjectResult(GenerateToken(user));
                 }
@@ -47,19 +59,34 @@ namespace Hurriyet.HurriyetDb.WebApi.Controllers
                 SecurityKey securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("uzun ince bir yoldayım şarkısını buradan tüm sevdiklerime hediye etmek istiyorum mümkün müdür acaba?"));
                 var token = new JwtSecurityToken(
                     issuer: "balbayrak.com.tr",
-                    audience: "heimdall.fabrikam.com",
+                    audience: user.Email,
                     claims: someClaims,
-                    expires: DateTime.Now.AddMinutes(1),
+                    expires: DateTime.Now.AddMinutes(3),
                     signingCredentials: new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256)
                 );
 
                 return new JwtSecurityTokenHandler().WriteToken(token);
             }
 
-            private bool IsValidUserAndPassword(string userName, string password)
+            private bool IsValidUserAndPassword(User user)
             {
-                //Sürekli true dönüyor. Normalde bir Identity mekanizması ile entegre etmemiz lazım.
-                return true;
+                try
+                {
+                    if (ModelState.IsValid)
+                    {
+                        if (_userService.GetUser(user.Email, user.Password) != null)
+                        {
+                            return true;
+                        }
+                        return false;
+                    }
+                    return false;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                    return false;
+                }
             }
         }
     }

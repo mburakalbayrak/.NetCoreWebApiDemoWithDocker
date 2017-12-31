@@ -10,5 +10,9 @@ namespace Hurriyet.HurriyetDb.Business.Abstract
         User GetUser(string email, string password);
 
         List<User> GetAll();
+
+        void Add(User product);
+
+        void Update(User product);
     }
 }

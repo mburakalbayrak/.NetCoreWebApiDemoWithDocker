@@ -14,6 +14,7 @@ namespace Hurriyet.HurriyetDb.WebApi.Controllers
         public class ProductsController : Controller
         {
             private IProductService _productService;
+
             public ProductsController(IProductService productService)
             {
                 _productService = productService;
