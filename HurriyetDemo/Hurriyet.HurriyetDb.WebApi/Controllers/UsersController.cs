@@ -17,7 +17,7 @@ namespace Hurriyet.HurriyetDb.WebApi.Controllers
 
         public UsersController(IUSerService userService)
         {
-            userService = _uSerService;
+            _uSerService = userService;
         }
 
         [HttpPost]
