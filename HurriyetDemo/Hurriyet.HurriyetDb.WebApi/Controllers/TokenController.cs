@@ -31,6 +31,12 @@ namespace Hurriyet.HurriyetDb.WebApi.Controllers
                 _userService = userService;
             }
 
+            [HttpGet]
+            public string Get()
+            {
+                return "send your username and password with post method";
+            }
+
             [HttpPost("new")]
             public IActionResult GetToken([FromBody]User user)
             {
@@ -55,7 +61,7 @@ namespace Hurriyet.HurriyetDb.WebApi.Controllers
                     issuer: "",
                     audience: "",
                     claims: someClaims,
-                    expires: DateTime.Now.AddMinutes(7),
+                    expires: DateTime.Now.AddMinutes(3),
                     signingCredentials: new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256)
                 );
 

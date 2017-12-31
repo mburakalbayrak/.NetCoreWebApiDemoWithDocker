@@ -6,6 +6,7 @@ using Hurriyet.HurriyetDb.Business.Abstract;
 using HurriyetDemo.HurriyetDb.Entities.Concrete;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using NLog;
 
 namespace Hurriyet.HurriyetDb.WebApi.Controllers
 {
@@ -13,6 +14,7 @@ namespace Hurriyet.HurriyetDb.WebApi.Controllers
     [Route("api/[controller]")]
     public class UsersController : Controller
     {
+        private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
         private IUSerService _uSerService;
 
         public UsersController(IUSerService userService)
@@ -33,8 +35,9 @@ namespace Hurriyet.HurriyetDb.WebApi.Controllers
                 }
                 return Ok(products);
             }
-            catch (Exception e)
+            catch (Exception exception)
             {
+                Logger.Error(exception);
                 return new StatusCodeResult(500);
             }
         }
@@ -52,8 +55,9 @@ namespace Hurriyet.HurriyetDb.WebApi.Controllers
 
                 return new StatusCodeResult(201);
             }
-            catch (Exception e)
+            catch (Exception exception)
             {
+                Logger.Error(exception);
                 return new StatusCodeResult(500);
             }
         }

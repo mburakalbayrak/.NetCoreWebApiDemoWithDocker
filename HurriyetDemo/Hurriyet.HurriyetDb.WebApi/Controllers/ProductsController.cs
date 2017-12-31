@@ -1,5 +1,7 @@
 ﻿using Hurriyet.HurriyetDb.Business.Abstract;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.Logging;
+using NLog;
 
 namespace Hurriyet.HurriyetDb.WebApi.Controllers
 {
@@ -13,6 +15,7 @@ namespace Hurriyet.HurriyetDb.WebApi.Controllers
         [Route("api/products")]
         public class ProductsController : Controller
         {
+            private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
             private IProductService _productService;
 
             public ProductsController(IProductService productService)
@@ -32,8 +35,9 @@ namespace Hurriyet.HurriyetDb.WebApi.Controllers
                     }
                     return Ok(products);
                 }
-                catch (Exception e)
+                catch (Exception exception)
                 {
+                    Logger.Error(exception);
                     return new StatusCodeResult(500);
                 }
             }
@@ -51,8 +55,9 @@ namespace Hurriyet.HurriyetDb.WebApi.Controllers
                     }
                     return Ok(products);
                 }
-                catch (Exception e)
+                catch (Exception exception)
                 {
+                    Logger.Error(exception);
                     return new StatusCodeResult(500);
                 }
             }
@@ -70,8 +75,9 @@ namespace Hurriyet.HurriyetDb.WebApi.Controllers
 
                     return new StatusCodeResult(201);
                 }
-                catch (Exception e)
+                catch (Exception exception)
                 {
+                    Logger.Error(exception);
                     return new StatusCodeResult(500);
                 }
             }
@@ -89,8 +95,9 @@ namespace Hurriyet.HurriyetDb.WebApi.Controllers
 
                     return Ok(product);
                 }
-                catch (Exception e)
+                catch (Exception exception)
                 {
+                    Logger.Error(exception);
                     return new StatusCodeResult(500);
                 }
             }
@@ -107,8 +114,9 @@ namespace Hurriyet.HurriyetDb.WebApi.Controllers
                     }
                     return BadRequest();
                 }
-                catch (Exception e)
+                catch (Exception exception)
                 {
+                    Logger.Error(exception);
                     return new StatusCodeResult(500);
                 }
             }
