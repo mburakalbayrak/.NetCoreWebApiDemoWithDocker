@@ -15,6 +15,7 @@ namespace HurriyetDemo.HurriyetDb.Entities.Concrete
         //}
 
         [Key]
+        [Required(ErrorMessage = "Id is required")]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
@@ -22,14 +23,14 @@ namespace HurriyetDemo.HurriyetDb.Entities.Concrete
         public string Title { get; set; }
 
         [Required(ErrorMessage = "CreatedDate is required")]
-        [DataType(DataType.DateTime, ErrorMessage = "")]
+        [DataType(DataType.DateTime, ErrorMessage = "Created Date format is not available")]
         public DateTime CreatedDate { get; set; }
 
-        [DataType(DataType.DateTime, ErrorMessage = "")]
+        [DataType(DataType.DateTime, ErrorMessage = "Modified Date format is not available")]
         public DateTime ModifiedDate { get; set; }
 
         [Required(ErrorMessage = "Price is required")]
-        [DataType(DataType.Currency, ErrorMessage = "")]
+        [DataType(DataType.Currency, ErrorMessage = "Currency format is not available, Use a point(.)")]
         public double Price { get; set; }
     }
 }

@@ -64,7 +64,7 @@ namespace Hurriyet.HurriyetDb.WebApi.Controllers
                 {
                     if (!ModelState.IsValid)
                     {
-                        return BadRequest();
+                        return BadRequest("Not a valid model");
                     }
                     _productService.Add(product);
 
@@ -77,16 +77,17 @@ namespace Hurriyet.HurriyetDb.WebApi.Controllers
             }
 
             [HttpPut]
-            public IActionResult Put(Product product)
+            public IActionResult Put([FromBody]Product product)
             {
                 try
                 {
-                    if (ModelState.IsValid)
+                    if (!ModelState.IsValid)
                     {
-                        _productService.Update(product);
-                        return Ok(product);
+                        return BadRequest("Not a valid model");
                     }
-                    return BadRequest();
+                    _productService.Update(product);
+
+                    return Ok(product);
                 }
                 catch (Exception e)
                 {

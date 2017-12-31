@@ -51,7 +51,7 @@ namespace Hurriyet.HurriyetDb.WebApi.Controllers
             private string GenerateToken(User user)
             {
                 var someClaims = new Claim[]{
-                    new Claim(JwtRegisteredClaimNames.UniqueName,user.Username),
+                    new Claim(JwtRegisteredClaimNames.UniqueName,user.Email),
                     new Claim(JwtRegisteredClaimNames.Email,user.Email),
                     new Claim(JwtRegisteredClaimNames.NameId,Guid.NewGuid().ToString())
                 };

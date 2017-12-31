@@ -25,12 +25,13 @@ namespace Hurriyet.HurriyetDb.WebApi.Controllers
         {
             try
             {
-                if (ModelState.IsValid)
+                if (!ModelState.IsValid)
                 {
-                    _uSerService.Add(user);
-                    return new StatusCodeResult(201);
+                    return BadRequest("Not a valid model");
                 }
-                return BadRequest();
+                _uSerService.Add(user);
+
+                return new StatusCodeResult(201);
             }
             catch (Exception e)
             {

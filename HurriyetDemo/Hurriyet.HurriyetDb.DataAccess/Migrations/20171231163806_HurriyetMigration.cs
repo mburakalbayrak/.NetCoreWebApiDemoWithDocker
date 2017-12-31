@@ -32,8 +32,7 @@ namespace Hurriyet.HurriyetDb.DataAccess.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
                     Email = table.Column<string>(nullable: false),
-                    Password = table.Column<string>(nullable: false),
-                    Username = table.Column<string>(nullable: false)
+                    Password = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {

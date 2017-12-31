@@ -50,9 +50,6 @@ namespace Hurriyet.HurriyetDb.DataAccess.Migrations
                     b.Property<string>("Password")
                         .IsRequired();
 
-                    b.Property<string>("Username")
-                        .IsRequired();
-
                     b.HasKey("Id");
 
                     b.ToTable("Users");

@@ -14,10 +14,7 @@ namespace HurriyetDemo.HurriyetDb.Entities.Concrete
         public int Id { get; set; }
 
         [Required]
-        public string Username { get; set; }
-
-        [Required]
-        [DataType(DataType.EmailAddress)]
+        [DataType(DataType.EmailAddress, ErrorMessage = "EMail format is not available")]
         public string Email { get; set; }
 
         [Required]
