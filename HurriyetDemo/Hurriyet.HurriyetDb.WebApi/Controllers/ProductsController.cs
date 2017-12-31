@@ -9,8 +9,8 @@ namespace Hurriyet.HurriyetDb.WebApi.Controllers
 
     namespace Hurriyet.HurriyetDb.WebApi.Controllers
     {
-        [Authorize]
-        [Route("api/[controller]")]
+        //[Authorize]
+        [Route("api/products")]
         public class ProductsController : Controller
         {
             private IProductService _productService;
@@ -62,12 +62,13 @@ namespace Hurriyet.HurriyetDb.WebApi.Controllers
             {
                 try
                 {
-                    if (ModelState.IsValid)
+                    if (!ModelState.IsValid)
                     {
-                        _productService.Add(product);
-                        return new StatusCodeResult(201);
+                        return BadRequest();
                     }
-                    return BadRequest();
+                    _productService.Add(product);
+
+                    return new StatusCodeResult(201);
                 }
                 catch (Exception e)
                 {

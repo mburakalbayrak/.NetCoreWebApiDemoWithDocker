@@ -21,7 +21,7 @@ namespace Hurriyet.HurriyetDb.WebApi.Controllers
     namespace Hurriyet.HurriyetDb.WebApi.Controllers
     {
         [AllowAnonymous]
-        [Route("api/[controller]")]
+        [Route("api/token")]
         public class TokenController : Controller
         {
             private IUSerService _userService;
