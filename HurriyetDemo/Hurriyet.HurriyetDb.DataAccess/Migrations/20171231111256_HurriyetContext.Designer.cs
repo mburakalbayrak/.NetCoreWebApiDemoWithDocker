@@ -11,7 +11,7 @@ using System;
 namespace Hurriyet.HurriyetDb.DataAccess.Migrations
 {
     [DbContext(typeof(HurriyetContext))]
-    [Migration("20171229161756_HurriyetContext")]
+    [Migration("20171231111256_HurriyetContext")]
     partial class HurriyetContext
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
