@@ -11,7 +11,7 @@ using System;
 namespace Hurriyet.HurriyetDb.DataAccess.Migrations
 {
     [DbContext(typeof(HurriyetContext))]
-    [Migration("20171231163806_HurriyetMigration")]
+    [Migration("20171231192855_HurriyetMigration")]
     partial class HurriyetMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -45,10 +45,10 @@ namespace Hurriyet.HurriyetDb.DataAccess.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("Email")
+                    b.Property<string>("Password")
                         .IsRequired();
 
-                    b.Property<string>("Password")
+                    b.Property<string>("UserName")
                         .IsRequired();
 
                     b.HasKey("Id");

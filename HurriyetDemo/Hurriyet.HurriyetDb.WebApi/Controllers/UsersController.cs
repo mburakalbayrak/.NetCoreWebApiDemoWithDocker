@@ -20,6 +20,25 @@ namespace Hurriyet.HurriyetDb.WebApi.Controllers
             _uSerService = userService;
         }
 
+
+        [HttpGet]
+        public IActionResult Get()
+        {
+            try
+            {
+                var products = _uSerService.GetAll();
+                if (products == null)
+                {
+                    return NotFound();
+                }
+                return Ok(products);
+            }
+            catch (Exception e)
+            {
+                return new StatusCodeResult(500);
+            }
+        }
+
         [HttpPost]
         public IActionResult Post([FromBody]User user)
         {

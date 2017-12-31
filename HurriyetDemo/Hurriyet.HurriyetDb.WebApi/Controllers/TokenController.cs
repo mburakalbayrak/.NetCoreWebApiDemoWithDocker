@@ -34,34 +34,28 @@ namespace Hurriyet.HurriyetDb.WebApi.Controllers
             [HttpPost("new")]
             public IActionResult GetToken([FromBody]User user)
             {
-                //if (IsValidUserAndPassword(user.Username, user.Password))
-
-                //if (ModelState.IsValid)
-                //{
-                //    return new ObjectResult(GenerateToken(user));
-                //}
                 if (IsValidUserAndPassword(user))
                 {
-                    return new ObjectResult(GenerateToken(user));
+                    return new ObjectResult(GenerateToken(user.UserName));
                 }
 
                 return Unauthorized();
             }
 
-            private string GenerateToken(User user)
+            private string GenerateToken(string userName)
             {
                 var someClaims = new Claim[]{
-                    new Claim(JwtRegisteredClaimNames.UniqueName,user.Email),
-                    new Claim(JwtRegisteredClaimNames.Email,user.Email),
+                    new Claim(JwtRegisteredClaimNames.UniqueName,userName),
+                    new Claim(JwtRegisteredClaimNames.Email,"heimdall@mail.com"),
                     new Claim(JwtRegisteredClaimNames.NameId,Guid.NewGuid().ToString())
                 };
 
-                SecurityKey securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("uzun ince bir yoldayım şarkısını buradan tüm sevdiklerime hediye etmek istiyorum mümkün müdür acaba?"));
+                SecurityKey securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("şifrelenecek anahtar metin burada"));
                 var token = new JwtSecurityToken(
-                    issuer: "balbayrak.com.tr",
-                    audience: user.Email,
+                    issuer: "",
+                    audience: "",
                     claims: someClaims,
-                    expires: DateTime.Now.AddMinutes(3),
+                    expires: DateTime.Now.AddMinutes(7),
                     signingCredentials: new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256)
                 );
 
@@ -74,7 +68,7 @@ namespace Hurriyet.HurriyetDb.WebApi.Controllers
                 {
                     if (ModelState.IsValid)
                     {
-                        if (_userService.GetUser(user.Email, user.Password) != null)
+                        if (_userService.GetUser(user.UserName, user.Password) != null)
                         {
                             return true;
                         }

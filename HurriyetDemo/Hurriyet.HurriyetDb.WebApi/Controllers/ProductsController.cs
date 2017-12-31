@@ -9,7 +9,7 @@ namespace Hurriyet.HurriyetDb.WebApi.Controllers
 
     namespace Hurriyet.HurriyetDb.WebApi.Controllers
     {
-        //[Authorize]
+        [Authorize]
         [Route("api/products")]
         public class ProductsController : Controller
         {

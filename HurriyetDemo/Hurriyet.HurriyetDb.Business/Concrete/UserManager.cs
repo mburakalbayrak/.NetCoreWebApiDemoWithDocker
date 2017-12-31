@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using System.Text;
 using Hurriyet.HurriyetDb.Business.Abstract;
 using Hurriyet.HurriyetDb.DataAccess.Abstract;
@@ -16,14 +17,18 @@ namespace Hurriyet.HurriyetDb.Business.Concrete
             _userDal = userDal;
         }
 
-        public User GetUser(string email, string password)
+        public User GetUser(string userName, string password)
         {
-            return _userDal.Get(x => x.Email.Equals(email) && x.Password.Equals(password));
+            return _userDal.Get(x => x.UserName.Equals(userName) && x.Password.Equals(password));
         }
 
-        public List<User> GetAll()
+        public List<User> GetAll(Expression<Func<User, bool>> filter = null)
         {
-            return _userDal.GetList();
+            if (filter == null)
+            {
+                return _userDal.GetList();
+            }
+            return _userDal.GetList(filter);
         }
 
         public void Add(User product)

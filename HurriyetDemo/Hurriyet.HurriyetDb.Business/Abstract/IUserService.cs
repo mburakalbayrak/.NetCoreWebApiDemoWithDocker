@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using System.Text;
 using HurriyetDemo.HurriyetDb.Entities.Concrete;
 
@@ -9,7 +10,7 @@ namespace Hurriyet.HurriyetDb.Business.Abstract
     {
         User GetUser(string email, string password);
 
-        List<User> GetAll();
+        List<User> GetAll(Expression<Func<User, bool>> filter = null);
 
         void Add(User product);
 

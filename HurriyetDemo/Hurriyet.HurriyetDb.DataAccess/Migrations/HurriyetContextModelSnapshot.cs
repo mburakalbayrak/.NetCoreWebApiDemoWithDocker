@@ -44,10 +44,10 @@ namespace Hurriyet.HurriyetDb.DataAccess.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("Email")
+                    b.Property<string>("Password")
                         .IsRequired();
 
-                    b.Property<string>("Password")
+                    b.Property<string>("UserName")
                         .IsRequired();
 
                     b.HasKey("Id");

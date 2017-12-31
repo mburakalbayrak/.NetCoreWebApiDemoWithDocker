@@ -43,33 +43,33 @@ namespace Hurriyet.HurriyetDb.WebApi
                     options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
                 })
                 .AddJwtBearer(options =>
+                {
+                    options.TokenValidationParameters = new TokenValidationParameters
                     {
-                        options.TokenValidationParameters = new TokenValidationParameters
+                        ValidateAudience = false,
+                        ValidAudience = "",
+                        ValidateIssuer = false,
+                        ValidIssuer = "",
+                        ValidateLifetime = false,
+                        ValidateIssuerSigningKey = false,
+                        IssuerSigningKey = new SymmetricSecurityKey(
+                            Encoding.UTF8.GetBytes(
+                                "şifrelenecek anahtar metin burada"))
+                    };
+                    options.Events = new JwtBearerEvents
+                    {
+                        OnTokenValidated = ctx =>
                         {
-                            ValidateAudience = true,
-                            ValidAudience = "heimdall.fabrikam.com",
-                            ValidateIssuer = true,
-                            ValidIssuer = "west-world.fabrikam.com",
-                            ValidateLifetime = true,
-                            ValidateIssuerSigningKey = true,
-                            IssuerSigningKey = new SymmetricSecurityKey(
-                                Encoding.UTF8.GetBytes(
-                                    "Benden bir security key istiyor sanırım şifreleme anahtarı için"))
-                        };
-                        options.Events = new JwtBearerEvents
-                        {
-                            OnTokenValidated = ctx =>
-                            {
                                 //Gerekirse burada gelen token içerisindeki çeşitli bilgilere göre doğrulam yapılabilir.
                                 return Task.CompletedTask;
-                            },
-                            OnAuthenticationFailed = ctx =>
-                            {
-                                Console.WriteLine("Exception:{0}", ctx.Exception.Message);
-                                return Task.CompletedTask;
-                            }
-                        };
-                    }
+                        },
+                        OnAuthenticationFailed = ctx =>
+                        {
+                            Console.WriteLine("Exception:{0}", ctx.Exception.Message);
+                            return Task.CompletedTask;
+                        }
+                    };
+                }
                 );
         }
 
