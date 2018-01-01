@@ -1,4 +1,5 @@
-﻿using Hurriyet.HurriyetDb.Business.Abstract;
+﻿using System.Linq;
+using Hurriyet.HurriyetDb.Business.Abstract;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Logging;
 using NLog;
@@ -29,7 +30,7 @@ namespace Hurriyet.HurriyetDb.WebApi.Controllers
                 try
                 {
                     var products = _productService.GetAll();
-                    if (products == null)
+                    if (products == null || !products.Any())
                     {
                         return NotFound();
                     }
@@ -47,13 +48,13 @@ namespace Hurriyet.HurriyetDb.WebApi.Controllers
             {
                 try
                 {
-                    var products = _productService.GetById(p => p.Id == productId);
+                    var product = _productService.GetById(p => p.Id == productId);
 
-                    if (products == null)
+                    if (product == null)
                     {
                         return NotFound($"Product not found. Product Id : {productId}");
                     }
-                    return Ok(products);
+                    return Ok(product);
                 }
                 catch (Exception exception)
                 {

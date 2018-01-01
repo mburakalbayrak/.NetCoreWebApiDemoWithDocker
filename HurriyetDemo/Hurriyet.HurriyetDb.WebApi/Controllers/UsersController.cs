@@ -15,11 +15,11 @@ namespace Hurriyet.HurriyetDb.WebApi.Controllers
     public class UsersController : Controller
     {
         private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
-        private IUSerService _uSerService;
+        private IUSerService _userService;
 
         public UsersController(IUSerService userService)
         {
-            _uSerService = userService;
+            _userService = userService;
         }
 
 
@@ -28,12 +28,12 @@ namespace Hurriyet.HurriyetDb.WebApi.Controllers
         {
             try
             {
-                var products = _uSerService.GetAll();
-                if (products == null)
+                var users = _userService.GetAll();
+                if (users == null || !users.Any())
                 {
                     return NotFound();
                 }
-                return Ok(products);
+                return Ok(users);
             }
             catch (Exception exception)
             {
@@ -51,7 +51,7 @@ namespace Hurriyet.HurriyetDb.WebApi.Controllers
                 {
                     return BadRequest("Not a valid model");
                 }
-                _uSerService.Add(user);
+                _userService.Add(user);
 
                 return new StatusCodeResult(201);
             }
