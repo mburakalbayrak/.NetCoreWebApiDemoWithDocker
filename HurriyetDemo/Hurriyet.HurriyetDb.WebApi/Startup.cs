@@ -49,15 +49,15 @@ namespace Hurriyet.HurriyetDb.WebApi
                 {
                     options.TokenValidationParameters = new TokenValidationParameters
                     {
-                        ValidateAudience = false,
-                        ValidAudience = "",
-                        ValidateIssuer = false,
-                        ValidIssuer = "",
-                        ValidateLifetime = false,
-                        ValidateIssuerSigningKey = false,
+                        ValidateAudience = true,
+                        ValidAudience = "audience",
+                        ValidateIssuer = true,
+                        ValidIssuer = "issuer",
+                        ValidateLifetime = true,
+                        ValidateIssuerSigningKey = true,
                         IssuerSigningKey = new SymmetricSecurityKey(
                             Encoding.UTF8.GetBytes(
-                                "şifrelenecek anahtar metin burada"))
+                                "bu yogurdu sarimsaklasakta mi saklasak"))
                     };
                     options.Events = new JwtBearerEvents
                     {
@@ -84,10 +84,13 @@ namespace Hurriyet.HurriyetDb.WebApi
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseAuthentication();
+            app.UseMvc();
+
             loggerFactory.AddNLog();
             env.ConfigureNLog("nlog.config");
 
-            app.UseMvc();
+            
         }
     }
 }

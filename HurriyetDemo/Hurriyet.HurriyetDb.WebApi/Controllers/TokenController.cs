@@ -52,14 +52,13 @@ namespace Hurriyet.HurriyetDb.WebApi.Controllers
             {
                 var someClaims = new Claim[]{
                     new Claim(JwtRegisteredClaimNames.UniqueName,userName),
-                    new Claim(JwtRegisteredClaimNames.Email,"heimdall@mail.com"),
                     new Claim(JwtRegisteredClaimNames.NameId,Guid.NewGuid().ToString())
                 };
 
-                SecurityKey securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("şifrelenecek anahtar metin burada"));
+                SecurityKey securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("bu yogurdu sarimsaklasakta mi saklasak"));
                 var token = new JwtSecurityToken(
-                    issuer: "",
-                    audience: "",
+                    issuer: "issuer",
+                    audience: "audience",
                     claims: someClaims,
                     expires: DateTime.Now.AddMinutes(3),
                     signingCredentials: new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256)

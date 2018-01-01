@@ -6,3 +6,14 @@ services:
     build:
       context: .
       dockerfile: Hurriyet.HurriyetDb.WebApi\Dockerfile
+    environment:
+            DB_CONNECTION_STRING: "host=postgres_image;port=5432;database=HurriyetDb;username=postgres;password=8515586189_Brk"
+postgres_image:
+    image: postgres:alpine
+    ports:
+        - "5432:5432"
+    environment:
+        POSTGRES_USER: "postgres"
+        POSTGRES_PASSWORD: "8515586189_Brk"
+        POSTGRES_DB: "HurriyetDb"
+
