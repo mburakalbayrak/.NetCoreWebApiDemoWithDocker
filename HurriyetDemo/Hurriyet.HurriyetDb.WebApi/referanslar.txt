@@ -1,0 +1,14 @@
+-https://www.udemy.com/aspnet-mvc-core-ile-web-api-gelistirmek/learn/v4/t/lecture/6613046?start=0
+
+-ASP.NET WEB API (kitap) Gökhan GÖKALP - Burak TUNGUT
+
+-https://dotnetthoughts.net/using-nlog-in-aspnet-core/
+
+-https://stackoverflow.com/questions/34679727/use-nlog-in-asp-net-core-application
+
+-http://www.buraksenyurt.com/post/jwt-json-web-token-kullanimi
+
+
+
+
+
