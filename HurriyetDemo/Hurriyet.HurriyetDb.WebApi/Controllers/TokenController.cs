@@ -60,7 +60,7 @@ namespace Hurriyet.HurriyetDb.WebApi.Controllers
                     issuer: "issuer",
                     audience: "audience",
                     claims: someClaims,
-                    expires: DateTime.Now.AddMinutes(3),
+                    expires: DateTime.Now.AddMinutes(1),
                     signingCredentials: new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256)
                 );
 

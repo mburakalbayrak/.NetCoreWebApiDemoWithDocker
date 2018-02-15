@@ -29,7 +29,7 @@ namespace Hurriyet.HurriyetDb.WebApi.Controllers
             {
                 try
                 {
-                    var products = _productService.GetAll();
+                    var products = _productService.GetAll()?.OrderBy(p => p.Id);
                     if (products == null || !products.Any())
                     {
                         return NotFound();

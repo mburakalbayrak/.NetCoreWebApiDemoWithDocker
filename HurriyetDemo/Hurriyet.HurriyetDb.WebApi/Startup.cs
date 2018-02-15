@@ -14,6 +14,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
+using NLog;
 using NLog.Extensions.Logging;
 using NLog.Web;
 
@@ -21,6 +22,7 @@ namespace Hurriyet.HurriyetDb.WebApi
 {
     public class Startup
     {
+        private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
@@ -69,6 +71,7 @@ namespace Hurriyet.HurriyetDb.WebApi
                         OnAuthenticationFailed = ctx =>
                         {
                             Console.WriteLine("Exception:{0}", ctx.Exception.Message);
+                            Logger.Error(ctx.Exception, ctx.Exception.Message);
                             return Task.CompletedTask;
                         }
                     };
